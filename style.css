@@ -1,11 +1,19 @@
+
+/* custom web fonts */
+
 *{
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+   /* background-color: #F9FAFB; */
 }
 .logo{
-  position: absolute;
-  margin-left: 100px;
+  /* position: absolute; */
+  width: 160px;
+  height: 70px;
+  flex-shrink: 0;
+  object-fit: cover;
+  margin-left: 30px;
 }
 .nav-link.active{
   background-color:#f7931e;
@@ -42,9 +50,30 @@
 
 
 /* ------hero section start------ */
-.hero_heading{
-  margin-top:60px ;
+.main_hero{
+  background-color: #02BAB3 !important;
 }
+.hero_heading{
+margin-top:60px ;
+-webkit-text-stroke-width: 0.699999988079071;
+-webkit-text-stroke-color: #FFF;
+font-family: Arial;
+font-size: 49.273px;
+font-style: normal;
+font-weight: 400;
+line-height: 69.803px; /* 141.667% */
+letter-spacing: -0.493px;
+}
+.hero_paragraph{
+  /* color: #FFF; */
+font-family: Arial;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 171.429% */
+letter-spacing: -0.14px;
+}
+
 .hero_search_btn{
   background-color: #f7931e !important;
   border: none !important;
@@ -52,4 +81,111 @@
 .form-control:focus {
   outline: none !important;
   box-shadow: none !important;
+}
+.hero_small{
+  display: flex;
+  margin-top: -20px;
+  border: 6.06px solid #FFFFFF;
+}
+.mobile_image{
+  margin-top: 20px;
+}
+/* -------Hadis section start-------- */
+.book0f_hadith{
+  background-color: #F9FAFB;
+}
+.hadith_btn{
+  width: 230px !important;
+  height: 40px;
+  border-radius: 5px !important;
+  gap: 10px;
+  color: white !important;
+  background-color: #f7931e !important;
+}
+.al_hadith_icons_before{
+  width: 25px;
+  height: 25px;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 4px;
+}
+.al_hadith_icons{
+  width: 15px;
+  height: 15px;
+}
+.hadith_headings h3{
+  font-size: 48px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 18px;
+  letter-spacing: -1%;
+}
+.hadith_sub_heading{
+  color: #02C6A9;
+}
+.hadith_paragraph{
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -1%;
+  text-align: center !important;
+  margin-top: 30px;
+  width: 623px;
+  text-align: center;
+}
+
+.hadith_card{
+  width: 229px;
+  height: 280px !important;
+  border-radius: 13px;
+  padding: 20px 16px 20px 16px;
+  background-color: #FFF;
+  box-shadow:0px 2.32px 46px 0px #0000000F;
+  border: none !important;
+}
+.hadith_card img{
+  width: 133px;
+  height: 190px;
+  object-fit: cover;
+  margin-left: 32px;
+}
+/* ------end----- */
+
+/* prophet_message css  */
+.prophet_message{
+ background-color: #F9FAFB;
+  
+}
+.prophet_contents{
+  background-image: url(./assets/images/mosque.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  background-color: #02BAB3;
+  width: 1000px !important;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.prophet_contents p{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+
+/* ------subjective section css start-------- */
+.subjective_card{
+  width: 232px;
+  height: 163px;
+  position: relative;
+  border: none !important;
+  box-shadow:0px 2.32px 46px 0px #0000000F;
+}
+.subjective_card img{
+  width: 60px;
+  height: 20px;
+  top: 15px;
+  position: absolute;
+  margin-left: 150px;
+  font-size: 34px;
 }

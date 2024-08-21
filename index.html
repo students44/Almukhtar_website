@@ -1,23 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
   <title>Almukhtar_site</title>
   <!-- custom css file -->
-   <link rel="stylesheet" href="style.css">
-   <!-- custom bootstrap file -->
-    <link rel="stylesheet" href="./assets/bootstrap-5.3.3-dist/css/bootstrap.min.css">
-    <!-- custom font awesome file -->
-     <link rel="stylesheet" href="./assets/fontawesome-free-6.6.0-web/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- custom bootstrap file -->
+  <link rel="stylesheet" href="./assets/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+  <!-- custom font awesome file -->
+  <link rel="stylesheet" href="./assets/fontawesome-free-6.6.0-web/css/all.min.css">
 </head>
+
 <body>
 
   <!-- navbar start -->
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand logo" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand logo" href="#">
+        <img src="./assets/images/logo.svg" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
@@ -36,45 +42,300 @@
             <a class="nav-link" href="#">Our projects</a>
           </li>
         </ul>
-        <i class="fa-solid fa-moon  nav_moon_icon"></i>
-        <div class="nav_buttons"> 
-          <button class="btn btn-outline nav_btn " type="submit">Support <i class="fa-solid fa-hand-holding-heart text-white nav_button_hand"></i></button> 
+        <div class="nav_buttons">
+          <i class="fa-solid fa-moon  nav_moon_icon"></i>
+          <button class="btn btn-outline nav_btn " type="submit">Support <i
+              class="fa-solid fa-hand-holding-heart text-white nav_button_hand"></i></button>
         </div>
       </div>
     </div>
-  </nav>  
+  </nav>
   <!-- end  -->
-<!-- hero section start -->
-           <section class="main_hero mt-5">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="hero_heading">
-                    <h2>Find Your Favorite <br> hadith</h2>
-                  </div>
-                  <div class="input-group mb-3">
-                    <input type="text" class="form-control p-2 border" placeholder="write here..." aria-label="Recipient's username" aria-describedby="button-addon2">
-                    <span class="input-group-text">
-                      <i class="fa-solid fa-sliders d-flex flex-column"></i>
-                    </span>
-                    <button class="btn btn-secondary hero_search_btn" type="button" id="button-addon2">
-                      <i class="fa-solid fa-magnifying-glass"></i>  Search</button>
-                  </div>
-                  <div class="hero_paragraph">
-                    <p>He said, the Messenger of Allah (PBUH) said: When a Muslim performs ablution properly, faces Allah with concentration and prays two rak'ahs, Paradise is guaranteed for him.</p>
-                    <p class="mt-4">[Amal in Sahih Fazayel: 87]</p>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="hero-image">
-                    <img src="./assets/images/Group 1171274966.png" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-            </div>
-           </section>
+  <!-- hero section start -->
+  <section class="main_hero p-5">
+    <div class="container">
+      <div class="row">
+        <div class=" col-sm-12 col-md-12 col-lg-6">
+          <div class="hero_heading">
+            <h2 class="text-white">Find Your Favorite <br> hadith</h2>
+          </div>
+          <div class="input-group mb-3">
+            <input type="text" class="form-control p-2 border" placeholder="write here..."
+              aria-label="Recipient's username" aria-describedby="button-addon2">
+            <span class="input-group-text">
+              <i class="fa-solid fa-sliders"></i>
+            </span>
+            <button class="btn btn-secondary hero_search_btn" type="button" id="button-addon2">
+              <i class="fa-solid fa-magnifying-glass"></i> Search</button>
+          </div>
+          <div class="hero_paragraph">
+            <p class="text-white">He said, the Messenger of Allah (PBUH) said: When a Muslim performs ablution properly, faces Allah with
+              concentration and prays two rak'ahs, Paradise is guaranteed for him.</p>
+            <p class="mt-4 text-white">[Amal in Sahih Fazayel: 87]</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="hero-image">
+            <img src="./assets/images/hero-mosque.png" alt="" class="img-fluid position-absolute
+            hero_small ">
+            <img src="./assets/images/Group 1171274966.png" alt="" class="img-fluid mobile_image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end -->
 
-<!-- js cdn file -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" ></script>
+  <section class="book0f_hadith  py-5">
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+        <a href="" class="btn btn-outline  text-decoration-none hadith_btn"> <i
+            class="fa-brands fa-slack me-1 al_hadith_icons_before"></i> All Hadith books <i
+            class="fa-solid fa-arrow-right al_hadith_icons ms-2" style="width: 20px;"></i></a>
+        <div class="hadith_headings mt-5">
+          <h3 class="text-center">Books of <span class="hadith_sub_heading"> Hadis</span></h3>
+          <p class="hadith_paragraph ">The books of hadith are an important source of guidance and inspiration for <br> Muslims. These books provide insight into the Seerat (biography) and guidance of the <br>Prophet Muhammad (peace be upon him).</p>
+        </div>
+      </div>
+
+      <!-- cards row -->
+      <div class="row">
+        <!-- first card -->
+        <div class=" col-sm-12 col-md-6 col-lg-3">
+          <a href="" class="text-decoration-none">
+            <div class="card hadith_card">
+              <img class="card-img-top" src="./assets/images/card-1.png" alt="Card image cap ">
+              <h5 class="text-center">Sahih Bukhari</h5>
+              <p class="text-center">Hadith Range 7563</p>
+            </div>
+          </a>
+        </div>
+        <!-- second card -->
+        <div class=" col-sm-12 col-md-6 col-lg-3">
+          <a href="" class="text-decoration-none">
+            <div class="card hadith_card">
+              <img class="card-img-top" src="./assets/images/card-2.png" alt="Card image cap">
+              <h5 class="text-center">Sahih Bukhari</h5>
+              <p class="text-center">Hadith Range 7563</p>
+            </div>
+          </a>
+        </div>
+        <!-- third card -->
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <a href="" class="text-decoration-none">
+            <div class="card hadith_card">
+              <img class="card-img-top" src="./assets/images/card-3.png" alt="Card image cap">
+              <h5 class="text-center">Sahih Bukhari</h5>
+              <p class="text-center">Hadith Range 7563</p>
+            </div>
+          </a>
+        </div>
+        <!-- fourth card -->
+        <div class=" col-sm-12 col-md-6 col-lg-3">
+          <a href="" class="text-decoration-none">
+            <div class="card hadith_card">
+              <img class="card-img-top" src="./assets/images/card-4.png" alt="Card image cap">
+              <h5 class="text-center">Sahih Bukhari</h5>
+              <p class="text-center">Hadith Range 7563</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <!-- sub card row -->
+       <div class="row mt-5">
+        <!-- fifth card -->
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <a href="" class="text-decoration-none">
+            <div class="card hadith_card">
+              <img class="card-img-top" src="./assets/images/card_5.png" alt="Card image cap">
+              <h5 class="text-center">Sahih Bukhari</h5>
+              <p class="text-center">Hadith Range 7563</p>
+            </div>
+          </a>
+        </div>
+        <!-- sixth card -->
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <a href="" class="text-decoration-none">
+            <div class="card hadith_card">
+              <img class="card-img-top" src="./assets/images/card_6.png" alt="Card image cap">
+              <h5 class="text-center">Sahih Bukhari</h5>
+              <p class="text-center">Hadith Range 7563</p>
+            </div>
+          </a>
+        </div>
+        <!-- seven card -->
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <a href="" class="text-decoration-none">
+            <div class="card hadith_card">
+              <img class="card-img-top" src="./assets/images/card_7.png" alt="Card image cap">
+              <h5 class="text-center">Sahih Bukhari</h5>
+              <p class="text-center">Hadith Range 7563</p>
+            </div>
+          </a>
+        </div>
+        <!-- eight card -->
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <a href="" class="text-decoration-none">
+            <div class="card hadith_card">
+              <img class="card-img-top" src="./assets/images/card_8.png" alt="Card image cap">
+              <h5 class="text-center">Sahih Bukhari</h5>
+              <p class="text-center">Hadith Range 7563</p>
+            </div>
+          </a>
+        </div>
+       </div>
+    </div>
+  </section>
+  <!-- end -->
+
+  <!-- prophet message section -->
+<section class="prophet_message  py-5">
+<div class="container d-flex justify-content-center">
+  <div class="row">
+    <div class="prophet_contents p-4">
+      <p class="text-center mt-5 text-white">The Prophet (peace and blessings of Allah be upon him) said, “The best of you is the one who is the best in character” (Bukhari, Muslim, Mishkat <br> Ha/5075).</p>
+      <p class="text-center text-white">Sahih Fazayel Amal: 87</p>
+    </div>
+  </div>
+</div>
+</section>
+<!-- end -->
+
+<!-- subjective section start -->
+<section class="book0f_hadith  py-5">
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="hadith_headings mt-5">
+        <h3 class="text-center">Subjective  <span class="hadith_sub_heading"> Hadith</span></h3>
+        <p class="hadith_paragraph ">Thematic hadiths are collections of hadiths organized by topic rather than by narrator or chain of transmission. Through this, it is possible to easily gain knowledge on certain topics of Islam. This compilation can also be helpful for scholars and teachers who want to teach specific subjects.</p>
+      </div>
+    </div>
+
+    <!-- cards row -->
+    <div class="row d-flex justify-content-center">
+      <!-- first card -->
+      <div class=" col-sm-12 col-md-6 col-lg-3">
+        <a href="" class="text-decoration-none">
+          <div class="card subjective_card">
+            <svg width="40" height="40"  viewBox="0 0 100 100" style="margin-left: 10px; margin-top:5px">
+              <polygon points="50,10 90,40 70,90 30,90 10,40" fill="#3498db" />
+              <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="40" font-family="Arial" dy=".5em">১</text>
+            </svg>
+            <img class="card-img-top img-fluid" src="./assets/images/عقيدة.png">
+            <h5 class="mt-5 ms-3">Sahih Bukhari</h5>
+            <p class="ms-3">Hadith Range 7563</p>
+          </div>
+        </a>
+      </div>
+      <!-- second card -->
+      <div class=" col-sm-12 col-md-6 col-lg-3">
+        <a href="" class="text-decoration-none">
+          <div class="card subjective_card">
+            <svg width="40" height="40"  viewBox="0 0 100 100" style="margin-left: 10px; margin-top:5px">
+              <polygon points="50,10 90,40 70,90 30,90 10,40" fill="#DDDDDD" />
+              <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="40" font-family="Arial" dy=".5em">২</text>
+            </svg>
+            <img class="card-img-top img-fluid" src="./assets/images/إيمان.png">
+            <h5 class="mt-5 ms-3">Sahih Bukhari</h5>
+            <p class="ms-3">Hadith Range 7563</p>
+          </div>
+        </a>
+      </div>
+      <!-- third card -->
+      <div class="col-sm-12 col-md-6 col-lg-3">
+        <a href="" class="text-decoration-none">
+          <div class="card subjective_card">
+            <svg width="40" height="40"  viewBox="0 0 100 100" style="margin-left: 10px; margin-top:5px">
+              <polygon points="50,10 90,40 70,90 30,90 10,40" fill="#DDDDDD" />
+              <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="40" font-family="Arial" dy=".5em">৩</text>
+            </svg>
+            <img class="card-img-top img-fluid" src="./assets/images/حرمة.png">
+            <h5 class="mt-5 ms-3">Sahih Bukhari</h5>
+            <p class="ms-3">Hadith Range 7563</p>
+          </div>
+        </a>
+      </div>
+      <!-- fourth card -->
+      <div class=" col-sm-12 col-md-6 col-lg-3">
+        <a href="" class="text-decoration-none">
+          <div class="card subjective_card">
+            <svg width="40" height="40"  viewBox="0 0 100 100" style="margin-left: 10px; margin-top:5px">
+              <polygon points="50,10 90,40 70,90 30,90 10,40" fill="#DDDDDD" />
+              <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="40" font-family="Arial" dy=".5em">৪</text>
+            </svg>
+            <img class="card-img-top img-fluid" src="./assets/images/قصص الحديث.png">
+            <h5 class="mt-5 ms-3">Sahih Bukhari</h5>
+            <p class="ms-3">Hadith Range 7563</p>
+          </div>
+        </a>
+      </div>
+      <!-- fifth card -->
+      <div class=" col-sm-12 col-md-6 col-lg-3 mt-3">
+        <a href="" class="text-decoration-none">
+          <div class="card subjective_card">
+            <svg width="40" height="40"  viewBox="0 0 100 100" style="margin-left: 10px; margin-top:5px">
+              <polygon points="50,10 90,40 70,90 30,90 10,40" fill="#DDDDDD" />
+              <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="40" font-family="Arial" dy=".5em">৫</text>
+            </svg>
+            <img class="card-img-top img-fluid" src="./assets/images/الصلاة.png">
+            <h5 class="mt-5 ms-3">Sahih Bukhari</h5>
+            <p class="ms-3">Hadith Range 7563</p>
+          </div>
+        </a>
+      </div>
+      <!-- seventh card -->
+      <div class=" col-sm-12 col-md-6 col-lg-3 mt-3">
+        <a href="" class="text-decoration-none">
+          <div class="card subjective_card">
+            <svg width="40" height="40"  viewBox="0 0 100 100" style="margin-left: 10px; margin-top:5px">
+              <polygon points="50,10 90,40 70,90 30,90 10,40" fill="#DDDDDD" />
+              <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="40" font-family="Arial" dy=".5em">৬</text>
+            </svg>
+            <img class="card-img-top img-fluid" src="./assets/images/التبرع صدقة.png">
+            <h5 class="mt-5 ms-3">Sahih Bukhari</h5>
+            <p class="ms-3">Hadith Range 7563</p>
+          </div>
+        </a>
+      </div>
+      <!-- eight card -->
+      <div class=" col-sm-12 col-md-6 col-lg-3 mt-3">
+        <a href="" class="text-decoration-none">
+          <div class="card subjective_card">
+            <svg width="40" height="40"  viewBox="0 0 100 100" style="margin-left: 10px; margin-top:5px">
+              <polygon points="50,10 90,40 70,90 30,90 10,40" fill="#DDDDDD" />
+              <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="40" font-family="Arial" dy=".5em">৭</text>
+            </svg>
+            <img class="card-img-top img-fluid" src="./assets/images/حقوق الحيوان.png">
+            <h5 class="mt-5 ms-3">Sahih Bukhari</h5>
+            <p class="ms-3">Hadith Range 7563</p>
+          </div>
+        </a>
+      </div>
+      <!-- ninth card -->
+      <div class=" col-sm-12 col-md-6 col-lg-3 mt-3">
+        <a href="" class="text-decoration-none">
+          <div class="card subjective_card">
+            <svg width="40" height="40"  viewBox="0 0 100 100" style="margin-left: 10px; margin-top:5px">
+              <polygon points="50,10 90,40 70,90 30,90 10,40" fill="#DDDDDD" />
+              <text x="50%" y="50%" text-anchor="middle" fill="white" font-size="40" font-family="Arial" dy=".5em">৮</text>
+            </svg>
+            <img class="card-img-top img-fluid" src="./assets/images/الأفعال والفضائل.png">
+            <h5 class="mt-5 ms-3">Sahih Bukhari</h5>
+            <p class="ms-3">Hadith Range 7563</p>
+          </div>
+        </a>
+      </div>
+
+      <a href="" class="btn btn-outline  text-decoration-none hadith_btn mt-4"> <i
+        class="fa-brands fa-slack me-1 al_hadith_icons_before"></i> View All categories<i
+        class="fa-solid fa-arrow-right al_hadith_icons ms-2" style="width: 20px;"></i></a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- js cdn file -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
