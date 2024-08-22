@@ -15,12 +15,24 @@
   object-fit: cover;
   margin-left: 30px;
 }
+@media only screen and (max-width:576px) {
+  .logo img{
+    width: 90px !important;
+    margin-top: 13px;
+  }
+}
 .nav-link.active{
   background-color:#f7931e;
   border-radius: 10px;
   color: white !important;
   margin: 0px 10px 0px 10px;
   transition: background-color 0.3s ease, border-radius 0.3s ease;
+}
+@media only screen and (max-width:576px) {
+  .nav-link.active{
+    margin: 0px !important;
+  
+  }
 }
 .nav-link:hover{
   background-color: #f7931e;
@@ -52,9 +64,19 @@
 /* ------hero section start------ */
 .main_hero{
   background-color: #02BAB3 !important;
+  background-image: url(./assets/images/hero-Vector-image.png);
+  background-repeat: no-repeat;
+  background-position: center top 100%; /* Position the image at the bottom */
+  background-size: contain; /* Ensure the image scales properly within the container */
+}
+.kalma_image{
+  background-image: url(./assets/images/bismillah.png);
+  background-repeat: no-repeat;
+  background-size: contain; /* Ensure the image scales properly within the container */
+  background-size: 50%;
 }
 .hero_heading{
-margin-top:60px ;
+margin-top:80px ;
 -webkit-text-stroke-width: 0.699999988079071;
 -webkit-text-stroke-color: #FFF;
 font-family: Arial;
@@ -89,6 +111,13 @@ letter-spacing: -0.14px;
 }
 .mobile_image{
   margin-top: 20px;
+}
+.hero_small_tree{
+  margin-top: 30px;
+  margin-left: -60px;
+}
+.hero_large_tree{
+
 }
 /* -------Hadis section start-------- */
 .book0f_hadith{
@@ -130,7 +159,15 @@ letter-spacing: -0.14px;
   text-align: center !important;
   margin-top: 30px;
   width: 623px;
-  text-align: center;
+}
+@media only screen and (max-width:576px) {
+  .hadith_paragraph{
+    width: 100%;
+  }
+  .hadith_br{
+    display: none;
+    text-align: justify !important;
+  }
 }
 
 .hadith_card{
@@ -148,6 +185,11 @@ letter-spacing: -0.14px;
   object-fit: cover;
   margin-left: 32px;
 }
+@media only screen and (max-width:576px) {
+  .hadith_card img{
+    margin-left: 100px !important;
+  }
+}
 /* ------end----- */
 
 /* prophet_message css  */
@@ -164,6 +206,14 @@ letter-spacing: -0.14px;
   width: 1000px !important;
   border-radius: 20px;
   padding: 20px;
+  margin-left: 60px;
+}
+@media only screen and (max-width:576px){
+  .prophet_contents{
+    width: 100%;
+    margin: 0px;
+
+  }
 }
 
 .prophet_contents p{
@@ -176,7 +226,7 @@ letter-spacing: -0.14px;
 /* ------subjective section css start-------- */
 .subjective_card{
   width: 232px;
-  height: 163px;
+  height: 160px;
   position: relative;
   border: none !important;
   box-shadow:0px 2.32px 46px 0px #0000000F;
@@ -188,4 +238,154 @@ letter-spacing: -0.14px;
   position: absolute;
   margin-left: 150px;
   font-size: 34px;
+}
+@media  only screen and (max-width:576px) {
+  .subjective_card img{
+  margin-left: 280px;
+  }
+}
+.hadith_paragraph{
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -1%;
+  text-align: center !important;
+  margin-top: 30px;
+  width: 700px !important;
+}
+
+/*------- end --------  */
+.app_marketing{
+  background-color:#F9FAFB;
+}
+.custom_marketing_container{
+  background: linear-gradient(277.64deg, #02BAB3 0.56%, #F8FDFB 98.92%);
+  width: 1000px !important;
+  height: 280px;
+  border-radius: 15px;
+}
+.mobileapp_image{
+  margin-top: -70px;
+}
+.marketing_heading h3{
+  margin-left: 40px;
+  font-weight: 600;
+}
+.marketing_heading .marketing_paragraph{
+  margin-left: 40px;
+}
+.app_store_image{
+  margin-left: 33px;
+}
+.google_play_image{
+  margin-left: 8px;
+}
+.mobile_image{
+  margin-top: -90px !important;
+}
+.download_app_vector_image{
+  background-image: url(./assets/images/download_app_vector.png);
+  background-repeat: no-repeat;
+  background-position: center top 100%; /* Position the image at the bottom */
+  background-size: contain; /* Ensure the image scales properly within the container */
+}
+
+
+@media only screen and (max-width:576px) {
+  .custom_marketing_container{
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .mobile_image{
+    margin-top: 20px !important;
+    margin-left: 50px !important;
+  }
+  .app_paltform{
+    margin-top: 20px !important;
+  }
+}
+/* end */
+
+/* footer css */
+.footer_section{
+  background-color:#F9FAFB;
+}
+.footer_logo{
+  width: 130px;
+  height: 54px;
+  /* margin-top: 10px; */
+  margin-left: 20px;
+}
+.footer_content{
+  width: 370px;
+}
+.footer_content h5{
+margin-left: 20px;
+}
+.footer_content p{
+  margin-left: 20px;
+} 
+.footer_content{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: -1;
+}
+.navigate_contents{
+  /* width: 89px; */
+  font-size: 14px;
+  line-height: 24px !important;
+  margin-top: 60px;
+  margin-left: 20px;
+  letter-spacing: -1%;
+}
+.navigate_contents p{
+  color: black;
+  margin: 5px;
+}
+.ourproject_contents{
+  font-size: 14px;
+  line-height: 24px !important;
+  margin-top: 60px;
+  margin-left: 20px;
+  letter-spacing: -1%;
+}
+.ourproject_contents p{
+  color: black !important;
+  margin: 5px;
+  margin-left: 0px;
+}
+.sub_contents{
+  font-size: 14px;
+  line-height: 24px !important;
+  margin-top: 98px;
+  margin-left: 20px;
+  letter-spacing: -1%;
+}
+.sub_contents p {
+  color: black;
+  margin: 5px;
+  margin-left: 0px;
+}
+.footer-background-image{
+  background-image: url(./assets/images/footer-background.png);
+  background-repeat: no-repeat;
+  background-position: center top 100%; /* Position the image at the bottom */
+  background-size: contain; /* Ensure the image scales properly within the container */
+}
+.camel-image{
+  margin-top: 60px;
+}
+.popular-small-tree{
+  margin-top: 20px !important;
+}
+@media  only screen and (max-width:576px) {
+  .camel-image{
+    margin: 0px;
+  }
+  .popular-small-tree{
+    margin: 0px;
+  }
+  .popular-large-tree{
+    margin: 0px;
+  }
 }
