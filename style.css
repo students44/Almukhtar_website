@@ -15,12 +15,7 @@
   object-fit: cover;
   margin-left: 30px;
 }
-@media only screen and (max-width:576px) {
-  .logo img{
-    width: 90px !important;
-    margin-top: 13px;
-  }
-}
+
 .nav-link.active{
   background-color:#f7931e;
   border-radius: 10px;
@@ -28,12 +23,7 @@
   margin: 0px 10px 0px 10px;
   transition: background-color 0.3s ease, border-radius 0.3s ease;
 }
-@media only screen and (max-width:576px) {
-  .nav-link.active{
-    margin: 0px !important;
-  
-  }
-}
+
 .nav-link:hover{
   background-color: #f7931e;
   border-radius: 10px;
@@ -104,21 +94,56 @@ letter-spacing: -0.14px;
   outline: none !important;
   box-shadow: none !important;
 }
-.hero_small{
-  display: flex;
-  margin-top: -20px;
-  border: 6.06px solid #FFFFFF;
+.hero_top_contents {
+  position: relative; /* Establishes a positioning context for absolutely positioned elements */
+  
 }
-.mobile_image{
-  margin-top: 20px;
+
+.hero-mosque {
+  position: relative; /* Keeps the mosque image in its original flow */
+  width: 346px; /* Adjust width as needed */
+  height: 300px; /* Maintain aspect ratio */
+  margin-left: 60px;
+  margin-bottom: -30px;
+}
+
+.hero_mosque_icon {
+  position: absolute; /* Position this element relative to the nearest positioned ancestor (.hero_top_contents) */
+  top: 5px; /* Adjust this value to position the icon vertically */
+  left: 230px; /* Center horizontally */
+  transform: translateX(-50%); /* Centers the icon horizontally */
+  z-index: 10; /*Ensures the icon appears on top*/
+  width: 50px; /* Adjust width as needed */
+  height: 80px; /* Maintain aspect ratio */
+  margin-bottom: -30px !important;
+}
+
+
+.hero-image img{
+  width: 400px;
+  height: 350px;
+  margin-left: 20px;
+  /* margin-bottom: -60px !important; */
 }
 .hero_small_tree{
-  margin-top: 30px;
+  position: absolute;
+  margin-top: 90px;
   margin-left: -60px;
+  color: gray !important;
 }
 .hero_large_tree{
-
+  position: absolute;
+  margin-top: 45px;
 }
+.hero_dots {
+  font-size: 30px;
+  color: white;
+}
+
+.hero_dots span {
+  border-radius: 50%;
+}
+
 /* -------Hadis section start-------- */
 .book0f_hadith{
   background-color: #F9FAFB;
@@ -160,15 +185,7 @@ letter-spacing: -0.14px;
   margin-top: 30px;
   width: 623px;
 }
-@media only screen and (max-width:576px) {
-  .hadith_paragraph{
-    width: 100%;
-  }
-  .hadith_br{
-    display: none;
-    text-align: justify !important;
-  }
-}
+
 
 .hadith_card{
   width: 229px;
@@ -185,11 +202,7 @@ letter-spacing: -0.14px;
   object-fit: cover;
   margin-left: 32px;
 }
-@media only screen and (max-width:576px) {
-  .hadith_card img{
-    margin-left: 100px !important;
-  }
-}
+
 /* ------end----- */
 
 /* prophet_message css  */
@@ -208,13 +221,7 @@ letter-spacing: -0.14px;
   padding: 20px;
   margin-left: 60px;
 }
-@media only screen and (max-width:576px){
-  .prophet_contents{
-    width: 100%;
-    margin: 0px;
 
-  }
-}
 
 .prophet_contents p{
   font-weight: 400;
@@ -239,11 +246,7 @@ letter-spacing: -0.14px;
   margin-left: 150px;
   font-size: 34px;
 }
-@media  only screen and (max-width:576px) {
-  .subjective_card img{
-  margin-left: 280px;
-  }
-}
+
 .hadith_paragraph{
   font-weight: 400;
   line-height: 24px;
@@ -290,19 +293,7 @@ letter-spacing: -0.14px;
 }
 
 
-@media only screen and (max-width:576px) {
-  .custom_marketing_container{
-    width: 100% !important;
-    height: 100% !important;
-  }
-  .mobile_image{
-    margin-top: 20px !important;
-    margin-left: 50px !important;
-  }
-  .app_paltform{
-    margin-top: 20px !important;
-  }
-}
+
 /* end */
 
 /* footer css */
@@ -373,19 +364,151 @@ margin-left: 20px;
   background-size: contain; /* Ensure the image scales properly within the container */
 }
 .camel-image{
-  margin-top: 60px;
+  position: absolute;
+  margin-top: 110px;
 }
 .popular-small-tree{
-  margin-top: 20px !important;
+  margin-top: 65px !important;
 }
+.popular-large-tree{
+  margin-top: 30px;
+}
+
+
+
+/* media queries section start */
+
+/* queries for logo */
+@media only screen and (max-width:576px) {
+  .logo img{
+    width: 90px !important;
+    margin-top: 13px;
+  }
+}
+
+/* queries for nav link */
+@media only screen and (max-width:576px) {
+  .nav-link.active{
+    margin: 0px !important;
+  
+  }
+}
+/* queries for hero section */
+@media only screen and (max-width: 767px) {
+  .hero_mosque_icon {
+    top: 10px; /* Adjust top position for mobile */
+    left: 55%; /* Center horizontally */
+    transform: translateX(-50%); /* Centers the icon horizontally */
+    width: 40px; /* Adjust width for mobile */
+    height: 60px; /* Adjust height for mobile */
+  }
+}
+@media  only screen and (max-width:992px) {
+  .hero_small_tree{
+    display: none;
+  }
+  .hero_large_tree{
+    display: none;
+  }
+}
+
+@media only screen and (max-width:576px) {
+  .hero_small_tree{
+    display: none;
+  }
+  .hero_large_tree{
+    display: none;
+  }
+  .hero-mobile-image{
+    width: 100% !important;
+    height: 300px !important;
+    margin-top: -20px !important;
+  
+  }
+  .hero-mosque{
+   margin: 0px !important;
+   position: relative;
+  }
+  .hero_mosque_icon {
+    transform: translate(-98%);
+  }
+ 
+
+}
+
+/* end hero queries */
+
+
+/* Hadith section queries start */
+
+
+@media only screen and (max-width:576px) {
+  .hadith_paragraph{
+    width: 100%;
+  }
+  .hadith_br{
+    display: none;
+    text-align: justify !important;
+  }
+}
+@media only screen and (max-width:576px) {
+  .hadith_card img{
+    margin-left: 100px !important;
+  }
+}
+
+
+/* prophet message queries start */
+@media only screen and (max-width:576px){
+  .prophet_contents{
+    width: 100%;
+    margin: 0px;
+
+  }
+}
+
+/* end  */
+
+
+/* subjective card queries start */
+@media  only screen and (max-width:576px) {
+  .subjective_card img{
+  margin-left: 280px;
+  }
+  .hadith_headings h3 {
+  font-size: 33px;
+  }
+}
+
+/* end */
+
+
+/* app marketing queries start */
+@media only screen and (max-width:576px) {
+  .custom_marketing_container{
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .mobile_image{
+    margin-top: 20px !important;
+    margin-left: 50px !important;
+  }
+  .app_paltform{
+    margin-top: 20px !important;
+  }
+}
+/* end  */
+
+/* footer queries start */
 @media  only screen and (max-width:576px) {
   .camel-image{
-    margin: 0px;
+    display: none;
   }
   .popular-small-tree{
-    margin: 0px;
+  display: none;
   }
   .popular-large-tree{
-    margin: 0px;
+    display: none;
   }
 }
+
