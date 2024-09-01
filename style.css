@@ -1,13 +1,12 @@
-
 /* custom web fonts */
 
-*{
+* {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-   /* background-color: #F9FAFB; */
+  /* background-color: #F9FAFB; */
 }
-.logo{
+.logo {
   /* position: absolute; */
   width: 160px;
   height: 70px;
@@ -16,20 +15,20 @@
   margin-left: 30px;
 }
 
-.nav-link.active{
-  background-color:#f7931e;
+.nav-link.active {
+  background-color: #f7931e;
   border-radius: 10px;
   color: white !important;
   margin: 0px 10px 0px 10px;
   transition: background-color 0.3s ease, border-radius 0.3s ease;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   background-color: #f7931e;
   border-radius: 10px;
 }
 
-.nav_moon_icon{
+.nav_moon_icon {
   margin-right: 10px;
   /* border: 1px solid black; */
   padding: 4px;
@@ -38,55 +37,53 @@
   opacity: 0.6;
   cursor: pointer;
 }
-.nav_btn{
+.nav_btn {
   color: white !important;
-  background-color:#f7931e !important;
+  background-color: #f7931e !important;
   margin-right: 50px !important;
   text-align: center;
-
 }
-.nav_button_hand{
+.nav_button_hand {
   margin-left: 10px;
   font-size: 20px;
 }
 
-
 /* ------hero section start------ */
-.main_hero{
-  background-color: #02BAB3 !important;
+.main_hero {
+  background-color: #02bab3 !important;
   background-image: url(./assets/images/hero-Vector-image.png);
   background-repeat: no-repeat;
   background-position: center top 100%; /* Position the image at the bottom */
   background-size: contain; /* Ensure the image scales properly within the container */
 }
-.kalma_image{
+.kalma_image {
   background-image: url(./assets/images/bismillah.png);
   background-repeat: no-repeat;
   background-size: contain; /* Ensure the image scales properly within the container */
   background-size: 50%;
 }
-.hero_heading{
-margin-top:80px ;
--webkit-text-stroke-width: 0.699999988079071;
--webkit-text-stroke-color: #FFF;
-font-family: Arial;
-font-size: 49.273px;
-font-style: normal;
-font-weight: 400;
-line-height: 69.803px; /* 141.667% */
-letter-spacing: -0.493px;
+.hero_heading {
+  margin-top: 80px;
+  -webkit-text-stroke-width: 0.699999988079071;
+  -webkit-text-stroke-color: #fff;
+  font-family: Arial;
+  font-size: 49.273px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 69.803px; /* 141.667% */
+  letter-spacing: -0.493px;
 }
-.hero_paragraph{
+.hero_paragraph {
   /* color: #FFF; */
-font-family: Arial;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 171.429% */
-letter-spacing: -0.14px;
+  font-family: Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: -0.14px;
 }
 
-.hero_search_btn{
+.hero_search_btn {
   background-color: #f7931e !important;
   border: none !important;
 }
@@ -96,7 +93,6 @@ letter-spacing: -0.14px;
 }
 .hero_top_contents {
   position: relative; /* Establishes a positioning context for absolutely positioned elements */
-  
 }
 
 .hero-mosque {
@@ -105,12 +101,13 @@ letter-spacing: -0.14px;
   height: 300px; /* Maintain aspect ratio */
   margin-left: 60px;
   margin-bottom: -30px;
+  margin-top: -40px;
 }
 
 .hero_mosque_icon {
   position: absolute; /* Position this element relative to the nearest positioned ancestor (.hero_top_contents) */
-  top: 5px; /* Adjust this value to position the icon vertically */
-  left: 230px; /* Center horizontally */
+  top: -33px; /* Adjust this value to position the icon vertically */
+  left: 233px; /* Center horizontally */
   transform: translateX(-50%); /* Centers the icon horizontally */
   z-index: 10; /*Ensures the icon appears on top*/
   width: 50px; /* Adjust width as needed */
@@ -118,22 +115,23 @@ letter-spacing: -0.14px;
   margin-bottom: -30px !important;
 }
 
-
-.hero-image img{
+.hero-image img {
   width: 400px;
   height: 350px;
   margin-left: 20px;
-  /* margin-bottom: -60px !important; */
+  margin-bottom: -60px !important;
 }
-.hero_small_tree{
+.hero_small_tree {
   position: absolute;
-  margin-top: 90px;
-  margin-left: -60px;
-  color: gray !important;
+  margin-top: 17px;
+  margin-left: -80px;
+  width: 30px;
 }
-.hero_large_tree{
+.hero_large_tree {
+  width: 50px;
   position: absolute;
-  margin-top: 45px;
+  margin-left: -50px;
+  margin-top: -10px;
 }
 .hero_dots {
   font-size: 30px;
@@ -145,10 +143,10 @@ letter-spacing: -0.14px;
 }
 
 /* -------Hadis section start-------- */
-.book0f_hadith{
-  background-color: #F9FAFB;
+.book0f_hadith {
+  background-color: #f9fafb;
 }
-.hadith_btn{
+.hadith_btn {
   width: 230px !important;
   height: 40px;
   border-radius: 5px !important;
@@ -156,28 +154,28 @@ letter-spacing: -0.14px;
   color: white !important;
   background-color: #f7931e !important;
 }
-.al_hadith_icons_before{
+.al_hadith_icons_before {
   width: 25px;
   height: 25px;
   border: 1px solid white;
   border-radius: 5px;
   padding: 4px;
 }
-.al_hadith_icons{
+.al_hadith_icons {
   width: 15px;
   height: 15px;
 }
-.hadith_headings h3{
+.hadith_headings h3 {
   font-size: 48px;
   font-weight: 400;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 18px;
   letter-spacing: -1%;
 }
-.hadith_sub_heading{
-  color: #02C6A9;
+.hadith_sub_heading {
+  color: #02c6a9;
 }
-.hadith_paragraph{
+.hadith_paragraph {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -1%;
@@ -186,59 +184,68 @@ letter-spacing: -0.14px;
   width: 623px;
 }
 
-
-.hadith_card{
+.hadith_card {
   width: 229px;
-  height: 280px !important;
+  height: 290px !important;
   border-radius: 13px;
   padding: 20px 16px 20px 16px;
-  background-color: #FFF;
-  box-shadow:0px 2.32px 46px 0px #0000000F;
+  background-color: #fff;
+  box-shadow: 0px 2.32px 46px 0px #0000000f;
   border: none !important;
+  margin: 0px;
 }
-.hadith_card img{
+.hadith_card p {
+  margin-top: -5px;
+}
+
+.hadith_card img {
   width: 133px;
   height: 190px;
   object-fit: cover;
-  margin-left: 32px;
+  margin-left: 35px;
+}
+.hadith_second_row {
+  margin-bottom: -45px;
 }
 
 /* ------end----- */
 
 /* prophet_message css  */
-.prophet_message{
- background-color: #F9FAFB;
-  
+.prophet_message {
+  background-color: #f9fafb;
+  height: auto;
 }
-.prophet_contents{
+.prophet_contents {
   background-image: url(./assets/images/mosque.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  background-color: #02BAB3;
+  background-color: #02bab3;
   width: 1000px !important;
   border-radius: 20px;
   padding: 20px;
   margin-left: 60px;
 }
 
-
-.prophet_contents p{
+.prophet_contents p {
   font-weight: 400;
   font-size: 20px;
   line-height: 30px;
 }
-
+.prophet_message_dots {
+  font-size: 30px;
+  color: white;
+}
 
 /* ------subjective section css start-------- */
-.subjective_card{
+.subjective_card {
   width: 232px;
   height: 160px;
   position: relative;
   border: none !important;
-  box-shadow:0px 2.32px 46px 0px #0000000F;
+  box-shadow: 0px 2.32px 46px 0px #0000000f;
 }
-.subjective_card img{
+.subjective_card img {
   width: 60px;
   height: 20px;
   top: 15px;
@@ -247,7 +254,7 @@ letter-spacing: -0.14px;
   font-size: 34px;
 }
 
-.hadith_paragraph{
+.hadith_paragraph {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -1%;
@@ -257,71 +264,69 @@ letter-spacing: -0.14px;
 }
 
 /*------- end --------  */
-.app_marketing{
-  background-color:#F9FAFB;
+.app_marketing {
+  background-color: #f9fafb;
 }
-.custom_marketing_container{
-  background: linear-gradient(277.64deg, #02BAB3 0.56%, #F8FDFB 98.92%);
+.custom_marketing_container {
+  background: linear-gradient(277.64deg, #02bab3 0.56%, #f8fdfb 98.92%);
   width: 1000px !important;
   height: 280px;
   border-radius: 15px;
 }
-.mobileapp_image{
+.mobileapp_image {
   margin-top: -70px;
 }
-.marketing_heading h3{
+.marketing_heading h3 {
   margin-left: 40px;
   font-weight: 600;
 }
-.marketing_heading .marketing_paragraph{
+.marketing_heading .marketing_paragraph {
   margin-left: 40px;
 }
-.app_store_image{
+.app_store_image {
   margin-left: 33px;
 }
-.google_play_image{
+.google_play_image {
   margin-left: 8px;
 }
-.mobile_image{
+.mobile_image {
   margin-top: -90px !important;
 }
-.download_app_vector_image{
+.download_app_vector_image {
   background-image: url(./assets/images/download_app_vector.png);
   background-repeat: no-repeat;
   background-position: center top 100%; /* Position the image at the bottom */
   background-size: contain; /* Ensure the image scales properly within the container */
 }
 
-
-
 /* end */
 
 /* footer css */
-.footer_section{
-  background-color:#F9FAFB;
+.footer_section {
+  background-color: #f9fafb;
 }
-.footer_logo{
+.footer_logo {
   width: 130px;
   height: 54px;
   /* margin-top: 10px; */
   margin-left: 20px;
 }
-.footer_content{
+.footer_content {
   width: 370px;
 }
-.footer_content h5{
-margin-left: 20px;
-}
-.footer_content p{
+.footer_content h5 {
   margin-left: 20px;
-} 
-.footer_content{
+}
+.footer_content p {
+  margin-left: 20px;
+}
+.footer_content {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: -1;
 }
-.navigate_contents{
+.navigate_contents {
   /* width: 89px; */
   font-size: 14px;
   line-height: 24px !important;
@@ -329,23 +334,23 @@ margin-left: 20px;
   margin-left: 20px;
   letter-spacing: -1%;
 }
-.navigate_contents p{
+.navigate_contents p {
   color: black;
   margin: 5px;
 }
-.ourproject_contents{
+.ourproject_contents {
   font-size: 14px;
   line-height: 24px !important;
   margin-top: 60px;
   margin-left: 20px;
   letter-spacing: -1%;
 }
-.ourproject_contents p{
+.ourproject_contents p {
   color: black !important;
   margin: 5px;
   margin-left: 0px;
 }
-.sub_contents{
+.sub_contents {
   font-size: 14px;
   line-height: 24px !important;
   margin-top: 98px;
@@ -357,40 +362,37 @@ margin-left: 20px;
   margin: 5px;
   margin-left: 0px;
 }
-.footer-background-image{
+.footer-background-image {
   background-image: url(./assets/images/footer-background.png);
   background-repeat: no-repeat;
   background-position: center top 100%; /* Position the image at the bottom */
   background-size: contain; /* Ensure the image scales properly within the container */
 }
-.camel-image{
+.camel-image {
   position: absolute;
   margin-top: 110px;
 }
-.popular-small-tree{
+.popular-small-tree {
   margin-top: 65px !important;
 }
-.popular-large-tree{
+.popular-large-tree {
   margin-top: 30px;
 }
-
-
 
 /* media queries section start */
 
 /* queries for logo */
-@media only screen and (max-width:576px) {
-  .logo img{
+@media only screen and (max-width: 576px) {
+  .logo img {
     width: 90px !important;
     margin-top: 13px;
   }
 }
 
 /* queries for nav link */
-@media only screen and (max-width:576px) {
-  .nav-link.active{
+@media only screen and (max-width: 576px) {
+  .nav-link.active {
     margin: 0px !important;
-  
   }
 }
 /* queries for hero section */
@@ -403,112 +405,147 @@ margin-left: 20px;
     height: 60px; /* Adjust height for mobile */
   }
 }
-@media  only screen and (max-width:992px) {
-  .hero_small_tree{
+@media only screen and (max-width: 992px) {
+  .hero_small_tree {
     display: none;
   }
-  .hero_large_tree{
+  .hero_large_tree {
     display: none;
   }
 }
 
-@media only screen and (max-width:576px) {
-  .hero_small_tree{
+@media only screen and (max-width: 576px) {
+  .hero_small_tree {
     display: none;
   }
-  .hero_large_tree{
+  .hero_large_tree {
     display: none;
   }
-  .hero-mobile-image{
+  .hero-mobile-image {
     width: 100% !important;
-    height: 300px !important;
+    height: 250px !important;
     margin-top: -20px !important;
-  
+    margin-left: -6px !important;
   }
-  .hero-mosque{
-   margin: 0px !important;
-   position: relative;
+  .hero-mosque {
+    margin: 0px !important;
+    position: relative;
   }
   .hero_mosque_icon {
     transform: translate(-98%);
   }
- 
-
 }
 
 /* end hero queries */
 
-
 /* Hadith section queries start */
 
-
-@media only screen and (max-width:576px) {
-  .hadith_paragraph{
+@media only screen and (max-width: 576px) {
+  .hadith_paragraph {
     width: 100%;
   }
-  .hadith_br{
+  .hadith_br {
     display: none;
     text-align: justify !important;
   }
 }
-@media only screen and (max-width:576px) {
-  .hadith_card img{
-    margin-left: 100px !important;
+/* @media only screen and (max-width: 576px) {
+  .hadith_card {
+    width: 100%;
+  }
+} */
+@media only screen and (max-width:768px){
+  .hadith_card{
+    width: 100%;
   }
 }
 
-
 /* prophet message queries start */
-@media only screen and (max-width:576px){
-  .prophet_contents{
+@media only screen and (max-width: 576px) {
+  .prophet_contents {
     width: 100%;
     margin: 0px;
-
   }
 }
 
 /* end  */
 
-
 /* subjective card queries start */
-@media  only screen and (max-width:576px) {
-  .subjective_card img{
-  margin-left: 280px;
+@media only screen and (max-width: 576px) {
+  .subjective_card img {
+    margin-left: 280px;
   }
   .hadith_headings h3 {
-  font-size: 33px;
+    font-size: 33px;
+  }
+}
+@media only screen and (max-width:320px){
+  .subjective_card {
+    position: relative; /* Make sure the container is relatively positioned */
+  }
+
+  .subjective_card img {
+    position: absolute;
+    right: 8px; /* Positions the image to the right */
+    top: 8px; /* Adjust this value as needed */
+    margin-left: 0 !important; /* Resets the left margin */
   }
 }
 
 /* end */
 
-
 /* app marketing queries start */
-@media only screen and (max-width:576px) {
-  .custom_marketing_container{
+@media only screen and (max-width: 576px) {
+  .custom_marketing_container {
     width: 100% !important;
     height: 100% !important;
   }
-  .mobile_image{
+  .mobile_image {
     margin-top: 20px !important;
     margin-left: 50px !important;
   }
-  .app_paltform{
+  .app_paltform {
     margin-top: 20px !important;
   }
 }
+
 /* end  */
 
 /* footer queries start */
-@media  only screen and (max-width:576px) {
-  .camel-image{
+
+@media only screen and (max-width:992px){
+  .camel-image {
     display: none;
   }
-  .popular-small-tree{
-  display: none;
-  }
-  .popular-large-tree{
+  .popular-small-tree {
     display: none;
+  }
+  .popular-large-tree {
+    display: none;
+  }
+  .para_tree{
+    display: none;
+  }
+  
+  .navigate_contents{
+    margin-left: 10px;
   }
 }
+@media only screen and (max-width:320px){
+  .footer_content h5{
+    font-size: 16px;
+    width: 80%;
+  }
+  .footer_content p {
+    font-size: 16px;
+    width: 75%;
+    text-align: justify;
+  }
+  .footer_section{
+    margin: 0px !important;
+    padding: 0px !important;
+  }
+}
+
+
 
