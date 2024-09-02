@@ -382,39 +382,14 @@
 /* media queries section start */
 
 /* queries for logo */
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 575px) {
   .logo img {
     width: 90px !important;
     margin-top: 13px;
   }
-}
-
-/* queries for nav link */
-@media only screen and (max-width: 576px) {
   .nav-link.active {
     margin: 0px !important;
   }
-}
-/* queries for hero section */
-@media only screen and (max-width: 767px) {
-  .hero_mosque_icon {
-    top: 10px; /* Adjust top position for mobile */
-    left: 55%; /* Center horizontally */
-    transform: translateX(-50%); /* Centers the icon horizontally */
-    width: 40px; /* Adjust width for mobile */
-    height: 60px; /* Adjust height for mobile */
-  }
-}
-@media only screen and (max-width: 992px) {
-  .hero_small_tree {
-    display: none;
-  }
-  .hero_large_tree {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 576px) {
   .hero_small_tree {
     display: none;
   }
@@ -434,13 +409,6 @@
   .hero_mosque_icon {
     transform: translate(-98%);
   }
-}
-
-/* end hero queries */
-
-/* Hadith section queries start */
-
-@media only screen and (max-width: 576px) {
   .hadith_paragraph {
     width: 100%;
   }
@@ -448,88 +416,109 @@
     display: none;
     text-align: justify !important;
   }
-}
-@media only screen and (max-width:320px){
-  .hadith_card img{
-  margin-left: 30px !important;
-  }
-}
-  @media only screen and (max-width:375px){
-    .hadith_card img{
-    margin-left: 95px;
-    }
-  }
-  @media only screen and (max-width:425px){
-    .hadith_card img{
-    margin-left: 120px;
-    }
-  }
-
-@media only screen and (max-width:768px){
-  .book0f_hadith{
-  display: flex;
-  gap: 0px;
-  }
   .hadith_card{
-    margin-left: 50px;
-  }
-}
-
-/* prophet message queries start */
-@media only screen and (max-width: 576px) {
-  .prophet_contents {
     width: 100%;
-    margin: 0px;
+    
+  }
+  .hadith_card img{
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .prophet_contents {
+      width: 100%;
+      margin: 0px;
+    }
+    .subjective_card img {
+      margin-left: 280px;
+    }
+    .hadith_headings h3 {
+      font-size: 33px;
+    }
+    .custom_marketing_container {
+      width: 100% !important;
+      height: 100% !important;
+    }
+    .mobile_image {
+      margin-top: 20px !important;
+      margin-left: 50px !important;
+    }
+    .app_paltform {
+      margin-top: 20px !important;
+    }
+
+}
+/* For screens between 420px and 575px */
+@media (min-width: 576px) and (max-width: 767px) {
+  .card-img-top {
+    /* Center the image */
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-/* end  */
+/* queries for hero section */
+@media only screen and (max-width: 768px) {
+  .hero_mosque_icon {
+    top: 10px; 
+    left: 55%; 
+    transform: translateX(-50%);
+    width: 40px; 
+    height: 60px; 
+  }
+  /* queries for book of hadith */
+  .book0f_hadith{
+    display: flex;
+    gap: 0px;
+    }
+    /* queries for footer  */
+    
+  
+    .footer_logo {
+      max-width: 120px;
+    }
+  
+    .footer_content h5 {
+      font-size: 1.25rem; /* Smaller font size for headings */
+      margin-top: 0.75rem; /* Adjust top margin */
+    }
+  
+    .footer_content p {
+      font-size: 0.9rem; /* Smaller font size for paragraphs */
+      margin-top: 0.75rem; /* Adjust top margin */
+    }
+  
+
+}
+@media only screen and (max-width: 992px) {
+  .hero_small_tree {
+    display: none;
+  }
+  .hero_large_tree {
+    display: none;
+  }
+}
 
 /* subjective card queries start */
-@media only screen and (max-width: 576px) {
-  .subjective_card img {
-    margin-left: 280px;
-  }
-  .hadith_headings h3 {
-    font-size: 33px;
-  }
-}
+
 @media only screen and (max-width:320px){
   .subjective_card {
-    position: relative; /* Make sure the container is relatively positioned */
+    position: relative; 
   }
-
   .subjective_card img {
     position: absolute;
-    right: 8px; /* Positions the image to the right */
-    top: 8px; /* Adjust this value as needed */
-    margin-left: 0 !important; /* Resets the left margin */
+    right: 8px; 
+    top: 8px; 
+    margin-left: 0 !important; 
   }
 }
-
-/* end */
 
 /* app marketing queries start */
-@media only screen and (max-width: 576px) {
-  .custom_marketing_container {
-    width: 100% !important;
-    height: 100% !important;
-  }
-  .mobile_image {
-    margin-top: 20px !important;
-    margin-left: 50px !important;
-  }
-  .app_paltform {
-    margin-top: 20px !important;
-  }
-}
+
 @media only screen and (max-width:372px){
   .app_paltform img{
     width: 120px;
   }
 }
-
-/* end  */
 
 /* footer queries start */
 
