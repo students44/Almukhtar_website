@@ -407,13 +407,6 @@ margin-left: 20px;
 
 /* queries for logo */
 @media only screen and (max-width: 992px) {
-  .hero_mosque_icon {
-    transform: translateX(-50%);
-    width: 40px;
-    height: 60px;
-    margin-left: -5px;
-  }
-
   .hero_small_tree,
   .hero_large_tree {
     display: none;
@@ -480,15 +473,8 @@ margin-left: 20px;
     display: none;
     text-align: justify !important;
   }
-
   .hadith_card {
     width: 100%;
-
-  }
-
-  .hadith_card img {
-    margin-left: 100px !important;
-    padding: 0px;
   }
   /* Prophet message adjustments */
     .message_container {
@@ -496,9 +482,10 @@ margin-left: 20px;
       height: auto; /* Allow height to adjust with content */
     }
   /* Subjective card adjustments */
-  .subjective_card img {
-    display: flex;
-    float: right;
+  .hadith_card img {
+    display: block; /* Make the image a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 80%; /* Optional: Limit the image width to 80% */
   }
 
   .hadith_headings h3 {
@@ -531,6 +518,12 @@ margin-left: 20px;
   .footer_content img{
     display: none;
   }
+  .footer_content h5{
+    max-width: 200px;
+  }
+  .footer_content p{
+    max-width: 200px;
+  }
 }
 @media only screen and (max-width:768px){
   /* app marketing adjustment for tablets screen */
@@ -555,14 +548,11 @@ margin-left: 20px;
     width: 100%;
   }
   .hadith_card img{
-    margin-left: 85px;
+    display: block; /* Make the image a block element */
+    margin: 0 auto; /* Center the image horizontally */
+    max-width: 80%; /* Optional: Limit the image width to 80% */
   }
  
-}
-@media only screen and (max-width:667px){
-  .hadith_card img{
-    margin-left: 100px !important;
-  }
 }
 @media only screen and (max-width:992px){
   .hero_top_contents{
@@ -604,8 +594,8 @@ margin-left: 20px;
    }
    .prophet_message{
     width: 100%;
-   display: flex;
-   justify-content: center;
+    display: flex;
+    justify-content: center;
 
    }
 }
@@ -613,7 +603,17 @@ margin-left: 20px;
   .hero-mobile-image {
     width: 60% !important;
     height: 150px !important;
-    margin-left: 50px;
+    /* margin-left: 50px; */
+  }
+}
+@media screen and (max-width:768px) {
+  .hero-mobile-image {
+    width: 40% !important;
+    height: 150px !important;
+    /* margin-left: 50px; */
+  }
+  .hero-mosque{
+    width: 50%;
   }
 }
 
