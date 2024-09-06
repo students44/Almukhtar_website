@@ -109,14 +109,41 @@
   margin-left: 84px;
   margin-bottom: -60px !important;
 }
-.hero_dots {
-  font-size: 30px;
-  color: white;
+.carousel {
+  position: relative;
+}
+.hero-indicators{
+  position: absolute; /* Position indicators absolutely */
+  left: 100%; /* Center horizontally */
+  z-index: 10;
+}
+.hero-indicators button {
+  width: 8px !important;
+  height: 10px !important;
+  border: 5px dashed rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  transition: border-color 0.3s ease; /* Smooth transition for hover effect */
+}
+.hero-indicators .active {
+  background-color: #fff; /* Active indicator color */
+}
+.carousel-inner {
+  padding-bottom: 30px; /* Adjust based on the size of the indicators */
+}
+.carousel-item .hero-para {
+  text-align: center;
+  font-family: Arial;
+  font-size: 20px;
+  font-style: normal;
+  text-align: justify;
+  margin: 0px;
 }
 
-.hero_dots span {
-  border-radius: 50%;
-}
+
 
 /* -------Hadis section start-------- */
 .book0f_hadith {
@@ -203,8 +230,6 @@
   width: 8px !important;
   height: 10px !important;
   border: 5px dashed rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: end;
   border-radius: 50%;
   background-color: transparent;
   padding: 0;
@@ -525,8 +550,7 @@
 }
 @media only screen and (max-width: 375px) {
   .custom-indicators {
-    /* margin: 60px !important; */
-    background-color: red;
+    margin-top: -10px;
   }
   .message_container {
     height: auto !important;
@@ -573,6 +597,19 @@
   }
   .hero-mosque {
     width: 50%;
+  }
+  .carousel-item .hero-para{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: justify;
+    letter-spacing: 0px;
+    line-height: normal;
+    font-size: 19px
+
+  }
+  .hero-indicators button{
+    margin-top: 10px !important;
   }
 }
 @media only screen and (max-width: 992px) {
